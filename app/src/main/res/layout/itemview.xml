@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/monster"
+            android:id="@+id/image"
+            android:tint="#AAAAAA"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#CCEEFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STAGE"
+                android:textStyle="italic"
+                android:id="@+id/txt_stage"
+                android:padding="3dp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_name"
+                android:text="NAME"
+                android:textSize="20dp"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFB7DD"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/clear"
+            android:textSize="20dp"
+            android:layout_toStartOf="@id/memo"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#00DD00"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="39dp"
+            android:layout_toStartOf="@+id/start"
+            android:text="詳情"
+            android:id="@+id/memo"/>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="39dp"
+            android:layout_alignParentEnd="true"
+            android:text="開始"
+            android:id="@+id/start"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
